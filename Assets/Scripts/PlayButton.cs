@@ -12,5 +12,10 @@ public class PlayButton : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
 

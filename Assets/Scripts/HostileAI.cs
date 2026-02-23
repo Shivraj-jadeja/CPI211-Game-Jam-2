@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HostileAI: MonoBehaviour
 {
     public Transform horse;
-    public float speed = 3f;
+    public float speed = 1.5f;
     public float groundY = 0f; 
+    public float stopDistance = 5f;
 
     void Update()
     {
@@ -31,6 +33,13 @@ public class HostileAI: MonoBehaviour
     if (lookDir != Vector3.zero)
     {
         transform.rotation = Quaternion.LookRotation(lookDir);
+    }
+
+    float sqrDistance = (horse.position - transform.position).sqrMagnitude;
+
+    if (sqrDistance <= stopDistance * stopDistance)
+    {
+        SceneManager.LoadSceneAsync(3);
     }
     }
 }
