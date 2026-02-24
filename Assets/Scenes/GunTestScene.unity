@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.7584905, g: 0.7003708, b: 0.54239225, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.031
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 39d27e80110a983468075fd1868610d7, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -527,12 +527,49 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196862264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0168d3835d51de44a2f9858e2b6af71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControls
   movementSpeed: 5
+  playerCamera: {fileID: 116195404}
+--- !u!4 &1196862275 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4156173709932871441, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
+  m_PrefabInstance: {fileID: 5642607489802313097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1196862276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196862264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec72980442fddac4d86e75ab24b4d027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonLook
+  character: {fileID: 1196862275}
+  sensitivity: 2
+  smoothing: 1.5
+--- !u!114 &1196862277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196862264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonMovement
+  speed: 5
+  canRun: 1
+  runSpeed: 9
+  runningKey: 304
 --- !u!1 &1367722981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4354423129066537497, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1178,6 +1215,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2365015306290924134, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1196862270}
+    - targetCorrespondingSourceObject: {fileID: 2365015306290924134, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1196862277}
+    - targetCorrespondingSourceObject: {fileID: 2365015306290924134, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1196862276}
   m_SourcePrefab: {fileID: 100100000, guid: 5e91327b4061a2940b4c1d2ff32f8c40, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
