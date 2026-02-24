@@ -1,4 +1,5 @@
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
 
@@ -17,7 +18,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-            DontDestroyOnLoad(this.gameObject);
+            // DontDestroyOnLoad(this.gameObject);
 
         foreach (Sound s in sounds) {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -31,8 +32,13 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        // to-do
-        // Play("Theme");
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name == "MainMenu") {
+            Play("Theme_Menu");
+        } else if (currentScene.name == "DesertLand") {
+            Play("Theme_Main");
+        }
     }
 
     public void Play(string name)

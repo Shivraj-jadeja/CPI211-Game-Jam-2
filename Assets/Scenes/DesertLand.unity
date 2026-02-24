@@ -481,7 +481,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0348f98614dab5142951ee42be9205a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sounds: []
+  sounds:
+  - name: Theme_Main
+    clip: {fileID: 8300000, guid: edbedb470fffc0641b2c1b685a4a2b3e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!1001 &19556902
 PrefabInstance:
   m_ObjectHideFlags: 0
