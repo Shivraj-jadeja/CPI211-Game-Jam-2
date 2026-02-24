@@ -38,6 +38,8 @@ public class AudioManager : MonoBehaviour
             Play("Theme_Menu");
         } else if (currentScene.name == "DesertLand") {
             Play("Theme_Main");
+        } else if (currentScene.name == "Lose") {
+            Play("Game_Over");
         }
     }
 
