@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Horse
   - Zone
+  - Enemy
   layers:
   - Default
   - TransparentFX

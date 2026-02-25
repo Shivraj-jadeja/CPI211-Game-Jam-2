@@ -5,7 +5,7 @@ public class GunBehavior : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletPosition; // Child object in Hierarchy inside gun's barrel; where bullets spawn from
-    [SerializeField] private int shotSpeed = 50;
+    [SerializeField] private int shotSpeed = 10;
     private GameObject bullet;
 
     void Update()

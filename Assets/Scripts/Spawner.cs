@@ -36,6 +36,7 @@ public class Spawner : MonoBehaviour
     void Spawn()
     {
         GameObject enemy = Instantiate(cactus, transform.position, transform.rotation);
+        enemy.tag = "Enemy"; // Added to be detected by bullet
         
         Transform rootNode = enemy.transform.GetChild(0);
         
