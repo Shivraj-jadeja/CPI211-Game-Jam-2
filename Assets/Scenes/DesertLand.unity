@@ -4139,6 +4139,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc00000000015480952314896603797, type: 3}
+--- !u!1 &525976815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525976816}
+  m_Layer: 0
+  m_Name: ADS_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525976816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525976815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.09, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1351826492}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &526294931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7973,10 +8004,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4519716788627816, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1443013275}
+    - targetCorrespondingSourceObject: {fileID: 4519716788627816, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310811986}
+    - targetCorrespondingSourceObject: {fileID: 4519716788627816, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 525976816}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1487774384131766, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1351826493}
+    - targetCorrespondingSourceObject: {fileID: 1487774384131766, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1351826496}
   m_SourcePrefab: {fileID: 100100000, guid: ee329c3cd08e58645834d20702d7f6c6, type: 3}
 --- !u!1001 &1127411196
 PrefabInstance:
@@ -8598,6 +8638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivatePause
   pauseMenu: {fileID: 944462615}
+  player: {fileID: 330585543}
 --- !u!64 &1276682496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8739,6 +8780,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6446880464465935878, guid: 8f4c3e46fdfe6bc468404f48cba54991, type: 3}
   m_PrefabInstance: {fileID: 1221438730}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1310811985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1310811986}
+  m_Layer: 0
+  m_Name: Hip_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1310811986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310811985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.176, y: -0.092, z: 0.012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1351826492}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1323508348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9194,6 +9266,26 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1318928075130728572, guid: 01deee4b281bc114cb8b3d06dd78fd94, type: 3}
   bulletPosition: {fileID: 1443013275}
   shotSpeed: 20
+  fireRate: 0.5
+--- !u!114 &1351826496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351826489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0f8026e6519954b85f74884c24edad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GunADS
+  hipPos: {fileID: 1310811986}
+  adsPos: {fileID: 525976816}
+  adsLerpSpeed: 12
+  recoilBack: 0
+  recoilUpAngle: 5
+  recoilRecoverSpeed: 0.5
+  fireRate: 0.5
 --- !u!1001 &1352020469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9914,7 +10006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1376499308558211017, guid: 01deee4b281bc114cb8b3d06dd78fd94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0005
+      value: 0.019
       objectReference: {fileID: 0}
     - target: {fileID: 1376499308558211017, guid: 01deee4b281bc114cb8b3d06dd78fd94, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11174,7 +11266,7 @@ MonoBehaviour:
   runSpeed: 10
   runningKey: 304
   canJump: 1
-  jumpPower: 8
+  jumpPower: 15
   jumpButton: Jump
   isJumping: 0
 --- !u!136 &1579987222
@@ -11265,7 +11357,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579987219}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -12004,8 +12096,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 944462620}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1276682495}
+        m_TargetAssemblyTypeName: ActivatePause, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
