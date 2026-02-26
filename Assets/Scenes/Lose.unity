@@ -1969,34 +1969,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5872ca6cda8eac345b6321a37cbb9731, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1443975037}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5872ca6cda8eac345b6321a37cbb9731, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 294904778}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5872ca6cda8eac345b6321a37cbb9731, type: 3}
---- !u!1 &294904776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5872ca6cda8eac345b6321a37cbb9731, type: 3}
-  m_PrefabInstance: {fileID: 294904775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &294904777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5872ca6cda8eac345b6321a37cbb9731, type: 3}
   m_PrefabInstance: {fileID: 294904775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &294904778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294904776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85310efea09c6cb4a8b946fddbac88b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivatePause
-  pauseMenu: {fileID: 0}
 --- !u!1001 &305682535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12501,13 +12480,13 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1707432707}
+  - {fileID: 957742962}
   - {fileID: 704326587}
   - {fileID: 395769546}
   - {fileID: 294904775}
   - {fileID: 1173818731}
   - {fileID: 561243150}
   - {fileID: 2083982686}
-  - {fileID: 957742962}
   - {fileID: 835364187}
   - {fileID: 1570772803}
   - {fileID: 2083994121}

@@ -15,6 +15,8 @@ public class GunBehavior : MonoBehaviour
             Debug.Log("Left mouse button clicked");
             bullet = Instantiate(bulletPrefab, bulletPosition.position, bulletPosition.rotation);
             bullet.GetComponent<Rigidbody>().AddForce(-transform.forward * shotSpeed, ForceMode.Impulse);
+
+            FindAnyObjectByType<AudioManager>().Play("Shoot");
         }
     }
 }

@@ -38,8 +38,11 @@ public class AudioManager : MonoBehaviour
             Play("Theme_Menu");
         } else if (currentScene.name == "DesertLand") {
             Play("Theme_Main");
+            Play("Cactus_Zombie");
         } else if (currentScene.name == "Lose") {
             Play("Game_Over");
+        } else if (currentScene.name == "Win") {
+            Play("Game_Won");
         }
     }
 
@@ -56,6 +59,6 @@ public class AudioManager : MonoBehaviour
 
         // to-do
         // Add this line into the script that ur calling the sound from
-        // FindObjectOfType<AudioManager>().Play("SoundName");
+        // FindAnyObjectByType<AudioManager>().Play("SoundName");
     }
 }

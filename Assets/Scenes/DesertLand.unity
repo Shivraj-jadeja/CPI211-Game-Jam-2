@@ -9193,7 +9193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunBehavior
   bulletPrefab: {fileID: 1318928075130728572, guid: 01deee4b281bc114cb8b3d06dd78fd94, type: 3}
   bulletPosition: {fileID: 1443013275}
-  shotSpeed: 10
+  shotSpeed: 20
 --- !u!1001 &1352020469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15146,12 +15146,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[0].clip
       value: 
-      objectReference: {fileID: 8300000, guid: edbedb470fffc0641b2c1b685a4a2b3e, type: 3}
+      objectReference: {fileID: 8300000, guid: e6ca1abaa8ebd0145aa9c9c1020ca8df, type: 3}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[0].loop
       value: 1
@@ -15163,14 +15163,26 @@ PrefabInstance:
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: edbedb470fffc0641b2c1b685a4a2b3e, type: 3}
+      objectReference: {fileID: 8300000, guid: 42e036fc263169e4c8bf9cfd71f86338, type: 3}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[1].loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[1].name
-      value: Theme_Main
+      value: Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: adf8a23b44ee95c4b8b87877109c071b, type: 3}
+    - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
+      propertyPath: sounds.Array.data[2].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Cactus_Zombie
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[0].pitch
@@ -15181,11 +15193,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
-      propertyPath: sounds.Array.data[0].volume
+      propertyPath: sounds.Array.data[2].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
       propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156637467335679170, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}
+      propertyPath: sounds.Array.data[2].volume
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3238013379591946975, guid: 614846ae129fb9d4b8b4956e3e58fcf9, type: 3}

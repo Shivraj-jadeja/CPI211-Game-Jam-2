@@ -46,8 +46,6 @@ public class Spawner : MonoBehaviour
          
          HostileAI ai = enemy.AddComponent<HostileAI>();
 
-         EnterZone ai2 = enemy.AddComponent<EnterZone>();
-
          ai.horse = GameObject.FindWithTag("Horse").transform; 
     }
 }
