@@ -11170,9 +11170,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonMovement
   speed: 5
-  canRun: 0
-  runSpeed: 9
+  canRun: 1
+  runSpeed: 10
   runningKey: 304
+  canJump: 1
+  jumpPower: 8
+  jumpButton: Jump
+  isJumping: 0
 --- !u!136 &1579987222
 CapsuleCollider:
   m_ObjectHideFlags: 0
