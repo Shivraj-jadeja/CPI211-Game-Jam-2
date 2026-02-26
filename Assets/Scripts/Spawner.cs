@@ -3,7 +3,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
 
-     public GameObject cactus;
+    public GameObject cactusPrefab; // This has to be a prefab
 
     public float minSpawnTime = 10f;
     public float maxSpawnTime = 20f;
@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
 
     void Spawn()
     {
-        GameObject enemy = Instantiate(cactus, transform.position, transform.rotation);
+        GameObject enemy = Instantiate(cactusPrefab, transform.position, transform.rotation);
         enemy.tag = "Enemy"; // Added to be detected by bullet
         
         Transform rootNode = enemy.transform.GetChild(0);
